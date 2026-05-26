@@ -18,7 +18,7 @@ const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(
   75,
-  wolfContainer.innerWidth / wolfContainer.innerHeight,
+  wolfContainer.clientWidth / wolfContainer.clientHeight,
   0.1,
   1000
 );
@@ -30,12 +30,12 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 const controls = new OrbitControls(camera, renderer.domElement);
-renderer.setSize(wolfContainer.innerWidth/2,wolfContainer.innerHeight/2);
+renderer.setSize(wolfContainer.clientWidth,wolfContainer.clientHeight);
 renderer.setClearColor(0x000000,0)
 
 document.getElementById("wolfContainer").appendChild(renderer.domElement);
 
-camera.position.z = 5;
+camera.position.set(1,1,2.2) //Position de la camera
 
 // Lumière
 const directionalLight = new THREE.DirectionalLight(0xffffff,3);
@@ -52,6 +52,10 @@ loader.load(
   function (gltf){
     // Recuperer le loup avec ses animations
     model = gltf.scene;
+    // Centrer le modele dans la scene
+    const box = new THREE.Box3().setFromObject(model);
+    const center = box.getCenter(new THREE.Vector3());
+    model.position.sub(center)
     scene.add(model);
     // Récuperer la tete du loup
     head = model.getObjectByName("Head")
