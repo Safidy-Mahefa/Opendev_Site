@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <title>3d-wolf</title>
+  </head>
+  <body>
+        <!-- NAVBAR -->
+      <nav class="navbar">
+        <a class="navbar-logo" onclick="showPage('home')">
+          <div class="logo-dot">D</div>
+          OpenDev
+        </a>
+        <div class="navbar-links">
+          <button class="nav-link" onclick="showPage('home')">Accueil</button>
+          <button class="nav-link" onclick="showPage('services')">Services</button>
+          <button class="nav-link" onclick="showPage('portfolio')">Réalisations</button>
+          <button class="nav-link" onclick="showPage('about')">À propos</button>
+          <button class="nav-link" onclick="showPage('blog')">Blog</button>
+        </div>
+        <div class="navbar-actions">
+          <button class="btn btn-outline" onclick="showPage('contact')">Voir les tarifs</button>
+          <button class="btn btn-primary" onclick="showPage('contact')">Parlons de votre projet →</button>
+        </div>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+
+
+      <!-- ==========================================
+          PAGE: ACCUEIL
+      =========================================== -->
+      <div id="page-home" class="page page-content active">
+        <!-- HERO -->
+        <section class="hero">
+          <div class="container">
+            <div class="hero-grid">
+              <div>
+                <div class="hero-label">🚀 Votre partenaire digital de confiance</div>
+                <h1>Votre idée mérite <span>mieux qu'un prestataire</span> ordinaire</h1>
+                <p class="hero-desc">La plupart des agences livrent du code. Nous, on livre des résultats. Sites web, apps mobiles et outils métier qui font vraiment croître votre activité — pas juste exister en ligne.</p>
+                <div class="hero-cta">
+                  <button class="btn btn-primary btn-lg" onclick="showPage('contact')">Obtenir mon analyse gratuite →</button>
+                  <button class="btn btn-ghost btn-lg" onclick="showPage('portfolio')">Voir les résultats clients</button>
+                </div>
+                <div class="hero-stats">
+                  <div class="hero-stat-item"><div class="hero-stat-value">40+</div><div class="hero-stat-label">Projets livrés</div></div>
+                  <div class="hero-stat-item"><div class="hero-stat-value">98%</div><div class="hero-stat-label">Clients satisfaits</div></div>
+                  <div class="hero-stat-item"><div class="hero-stat-value">24h</div><div class="hero-stat-label">Délai de réponse</div></div>
+                </div>
+              </div>
+              <div>
+                <div class="hero-visual" id="wolfContainer"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      function showPage(id) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        const target = document.getElementById('page-' + id);
+        if (target) { target.classList.add('active'); window.scrollTo(0, 0); }
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active-link'));
+        const map = { home: 0, services: 1, portfolio: 2, about: 3, blog: 4, contact: 5 };
+        const navLinks = document.querySelectorAll('.nav-link');
+        if (map[id] !== undefined && navLinks[map[id]]) navLinks[map[id]].classList.add('active-link');
+      }
+    </script>
+  </body>
+</html>
