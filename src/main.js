@@ -31,10 +31,10 @@ controls.enableDamping = true;
 controls.enablePan = false;
 controls.enableZoom = false;
 controls.autoRotate = !prefersReducedMotion;
-controls.autoRotateSpeed = 0.35;
+controls.autoRotateSpeed = 0.25;
 
 wolfContainer.appendChild(renderer.domElement);
-camera.position.set(1, 1, 2.2);
+camera.position.set(1, 1, 2.0);
 
 const keyLight = new THREE.DirectionalLight(0xffffff, 3);
 keyLight.position.set(5, 5, 5);
@@ -101,7 +101,7 @@ function animate() {
     mixer.update(delta);
   }
 
-  target.position.set(mouseX * 2, 1 + mouseY * 2, 5);
+  target.position.set(mouseX * 2, 1 + mouseY * 2, 4);
   if (head && !prefersReducedMotion) {
     head.lookAt(target.position);
     head.rotateX(-Math.PI / 2);
