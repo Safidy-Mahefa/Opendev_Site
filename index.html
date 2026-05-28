@@ -1,11 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="OpenDev conçoit des sites web, applications mobiles et outils métier rapides, accessibles et orientés résultats pour les entreprises ambitieuses." />
+    <meta name="theme-color" content="#1A3C5E" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://opendev.site/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preload" href="/Wolf.glb" as="fetch" type="model/gltf-binary" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" />
     <link rel="stylesheet" href="src/style.css">
-    <title>3d-wolf</title>
+    <meta property="og:title" content="OpenDev — Sites, apps et outils métier qui performent" />
+    <meta property="og:description" content="Une équipe digitale orientée résultats : UX responsive, performance, SEO et expériences 3D immersives." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://opendev.site/" />
+    <meta property="og:image" content="https://opendev.site/favicon.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>OpenDev — Sites web, apps mobiles et outils métier performants</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "OpenDev",
+        "url": "https://opendev.site/",
+        "description": "Création de sites web, applications mobiles et outils métier rapides, SEO-friendly et orientés conversion.",
+        "areaServed": "MG",
+        "email": "contact@opendev.mg",
+        "telephone": "+261 34 00 000 00",
+        "sameAs": ["https://x.com/opendev"]
+      }
+    </script>
   </head>
   <body>
         <!-- NAVBAR -->
@@ -53,7 +81,17 @@
                   <div class="hero-stat-item"><div class="hero-stat-value">24h</div><div class="hero-stat-label">Délai de réponse</div></div>
                 </div>
               </div>
-              <div class="hero-visual" id="wolfContainer"></div>
+              <div class="hero-visual wolf-stage" id="wolfContainer" aria-label="Loup 3D interactif OpenDev">
+                <div class="wolf-nameplate">
+                  <span class="live-dot"></span>
+                  Loki, gardien des livraisons
+                </div>
+                <div class="wolf-chip wolf-chip-seo"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/search-check.svg" alt="" loading="lazy" decoding="async"> SEO prêt</div>
+                <div class="wolf-chip wolf-chip-speed"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/gauge.svg" alt="" loading="lazy" decoding="async"> 98 perf.</div>
+                <div class="wolf-orbit wolf-orbit-a"></div>
+                <div class="wolf-orbit wolf-orbit-b"></div>
+                <div class="wolf-shadow" aria-hidden="true"></div>
+              </div>
             </div>
           </div>
         </section>
@@ -81,7 +119,7 @@
             </div>
             <div class="grid-3">
               <div class="service-card">
-                <div class="service-icon">🌐</div>
+                <div class="service-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/globe-2.svg" alt="" loading="lazy" decoding="async"></div>
                 <h3>Sites Web qui convertissent</h3>
                 <p>Votre site actuel vous fait perdre des clients sans que vous le sachiez. On crée des sites rapides, percutants et conçus pour transformer les visiteurs en acheteurs.</p>
                 <ul class="service-features">
@@ -92,7 +130,7 @@
                 <span class="tag tag-emerald">Dès 800 €</span>
               </div>
               <div class="service-card">
-                <div class="service-icon">📱</div>
+                <div class="service-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/smartphone.svg" alt="" loading="lazy" decoding="async"></div>
                 <h3>Apps Mobiles qui fidélisent</h3>
                 <p>iOS & Android avec Flutter ou React Native - une expérience native fluide sur les deux plateformes, sans doubler les coûts. Vos utilisateurs reviendront d'eux-mêmes.</p>
                 <ul class="service-features">
@@ -103,7 +141,7 @@
                 <span class="tag tag-navy">Dès 3 000 €</span>
               </div>
               <div class="service-card">
-                <div class="service-icon">⚙️</div>
+                <div class="service-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/settings.svg" alt="" loading="lazy" decoding="async"></div>
                 <h3>Outils Métier qui font gagner du temps</h3>
                 <p>Chaque heure perdue sur Excel ou des process manuels coûte de l'argent. On automatise ce qui vous ralentit et centralise vos données pour que votre équipe soit enfin efficace.</p>
                 <ul class="service-features">
@@ -166,19 +204,19 @@
                 <p style="color:var(--text2);font-size:16px;margin-top:12px;line-height:1.7;">La plupart des agences facturent des heures et livrent du code. OpenDev livre des résultats mesurables. La nuance change tout - et votre compte en banque le remarquera.</p>
                 <div class="diff-list">
                   <div class="diff-item">
-                    <div class="diff-icon">🎯</div>
+                    <div class="diff-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/target.svg" alt="" loading="lazy" decoding="async"></div>
                     <div><h4>Résultats avant tout</h4><p>Chaque décision technique est guidée par votre objectif métier, pas par la dernière tendance dev.</p></div>
                   </div>
                   <div class="diff-item">
-                    <div class="diff-icon">🔄</div>
+                    <div class="diff-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/refresh-cw.svg" alt="" loading="lazy" decoding="async"></div>
                     <div><h4>Vous voyez l'avancement toutes les 2 semaines</h4><p>Des démos régulières pour corriger le tir tôt - avant que ça coûte cher.</p></div>
                   </div>
                   <div class="diff-item">
-                    <div class="diff-icon">📖</div>
+                    <div class="diff-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/book-open.svg" alt="" loading="lazy" decoding="async"></div>
                     <div><h4>Votre code, votre propriété</h4><p>Documentation complète, code source livré. Aucune dépendance forcée à notre agence.</p></div>
                   </div>
                   <div class="diff-item">
-                    <div class="diff-icon">🤝</div>
+                    <div class="diff-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/handshake.svg" alt="" loading="lazy" decoding="async"></div>
                     <div><h4>Un seul interlocuteur, zéro jeu de téléphone</h4><p>Votre chef de projet suit votre dossier de A à Z. Vous appelez, il répond.</p></div>
                   </div>
                 </div>
@@ -220,7 +258,7 @@
                       <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
                         <span style="font-size:12px;color:var(--emerald-dark);font-weight:600;width:90px;">OpenDev</span>
                         <div class="compare-bar-wrap"><div class="compare-bar us" style="width:100%;"></div></div>
-                        <span class="compare-val" style="color:var(--emerald-dark);">✓✓</span>
+                        <span class="compare-val compare-check" style="color:var(--emerald-dark);"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/badge-check.svg" alt="" loading="lazy" decoding="async"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/badge-check.svg" alt="" loading="lazy" decoding="async"></span>
                       </div>
                       <div style="display:flex;align-items:center;gap:10px;">
                         <span style="font-size:12px;color:var(--text3);width:90px;">Classique</span>
@@ -243,7 +281,7 @@
             </div>
             <div class="grid-3">
               <div class="testimonial-card">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="stars" aria-label="Note 5 sur 5"><img class="icon icon-star" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"><img class="icon icon-star" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"><img class="icon icon-star" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"><img class="icon icon-star" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"><img class="icon icon-star" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"></div>
                 <p class="quote">Ils ont compris notre problème en 30 minutes là où notre ancien prestataire n'avait pas compris en 3 mois. Le résultat dépasse largement nos attentes.</p>
                 <div class="testimonial-author">
                   <div class="author-avatar" style="background:linear-gradient(135deg,#1A3C5E,#00A878);">RR</div>
@@ -254,7 +292,7 @@
                 </div>
               </div>
               <div class="testimonial-card">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="stars" aria-label="Note 5 sur 5"><img class="icon icon-star" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"><img class="icon icon-star" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"><img class="icon icon-star" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"><img class="icon icon-star" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"><img class="icon icon-star" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"></div>
                 <p class="quote">Notre app de livraison gère maintenant 3x plus de commandes sans bug. L'équipe a été réactive, transparente, et vraiment investie dans notre succès.</p>
                 <div class="testimonial-author">
                   <div class="author-avatar" style="background:linear-gradient(135deg,#F4A261,#E8365D);">AH</div>
@@ -265,7 +303,7 @@
                 </div>
               </div>
               <div class="testimonial-card">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="stars" aria-label="Note 5 sur 5"><img class="icon icon-star" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"><img class="icon icon-star" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"><img class="icon icon-star" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"><img class="icon icon-star" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"><img class="icon icon-star" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"></div>
                 <p class="quote">La plateforme e-learning qu'ils ont créée est utilisée par 2 000 élèves chaque jour. Fiable, rapide, et facile à administrer. On les recommande sans hésiter.</p>
                 <div class="testimonial-author">
                   <div class="author-avatar" style="background:linear-gradient(135deg,#6c5ce7,#1A3C5E);">NR</div>
@@ -299,7 +337,7 @@
                 <div class="footer-logo"><div class="logo-dot">D</div>OpenDev</div>
                 <p class="footer-desc">Une agence qui résout de vrais problèmes numériques pour les entreprises et les particuliers. Sites web, apps mobiles, outils métier sur-mesure.</p>
                 <div class="footer-socials">
-                  <div class="social-btn">𝕏</div>
+                  <div class="social-btn"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/send.svg" alt="" loading="lazy" decoding="async"></div>
                   <div class="social-btn">in</div>
                   <div class="social-btn">gh</div>
                   <div class="social-btn">▶</div>
@@ -363,7 +401,7 @@
           <div class="container">
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
               <div class="service-card" style="padding:36px;">
-                <div class="service-icon" style="width:60px;height:60px;font-size:26px;">🌐</div>
+                <div class="service-icon" style="width:60px;height:60px;font-size:26px;"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/globe-2.svg" alt="" loading="lazy" decoding="async"></div>
                 <h3 style="font-size:22px;font-family:'Syne',sans-serif;">Sites Web</h3>
                 <p style="font-size:15px;">Sites vitrines, e-commerces, portails clients, landing pages à fort taux de conversion. On conçoit des sites qui parlent à vos clients et travaillent pour vous 24h/24.</p>
                 <ul class="service-features">
@@ -381,7 +419,7 @@
               </div>
 
               <div class="service-card" style="padding:36px;">
-                <div class="service-icon" style="width:60px;height:60px;font-size:26px;">📱</div>
+                <div class="service-icon" style="width:60px;height:60px;font-size:26px;"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/smartphone.svg" alt="" loading="lazy" decoding="async"></div>
                 <h3 style="font-size:22px;font-family:'Syne',sans-serif;">Applications Mobiles</h3>
                 <p style="font-size:15px;">iOS et Android avec une seule codebase en Flutter ou React Native. Des apps natives en termes d'expérience, économiques à développer et maintenir.</p>
                 <ul class="service-features">
@@ -399,7 +437,7 @@
               </div>
 
               <div class="service-card" style="padding:36px;">
-                <div class="service-icon" style="width:60px;height:60px;font-size:26px;">⚙️</div>
+                <div class="service-icon" style="width:60px;height:60px;font-size:26px;"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/settings.svg" alt="" loading="lazy" decoding="async"></div>
                 <h3 style="font-size:22px;font-family:'Syne',sans-serif;">Applications Métier</h3>
                 <p style="font-size:15px;">Outils internes, CRM, tableaux de bord, ERP légers - on automatise vos processus répétitifs et centralise vos données pour gagner en efficacité.</p>
                 <ul class="service-features">
@@ -417,7 +455,7 @@
               </div>
 
               <div class="service-card" style="padding:36px;">
-                <div class="service-icon" style="width:60px;height:60px;font-size:26px;">🧠</div>
+                <div class="service-icon" style="width:60px;height:60px;font-size:26px;"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/brain.svg" alt="" loading="lazy" decoding="async"></div>
                 <h3 style="font-size:22px;font-family:'Syne',sans-serif;">Conseil & Stratégie Digitale</h3>
                 <p style="font-size:15px;">Audit de votre présence en ligne, recommandations produit, choix technologiques - on vous aide à ne pas investir dans la mauvaise direction dès le départ.</p>
                 <ul class="service-features">
@@ -435,7 +473,7 @@
               </div>
 
               <div class="service-card" style="padding:36px;">
-                <div class="service-icon" style="width:60px;height:60px;font-size:26px;">🛡️</div>
+                <div class="service-icon" style="width:60px;height:60px;font-size:26px;"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/shield-check.svg" alt="" loading="lazy" decoding="async"></div>
                 <h3 style="font-size:22px;font-family:'Syne',sans-serif;">Maintenance & Support</h3>
                 <p style="font-size:15px;">Votre produit numérique est un organisme vivant. On assure les mises à jour, la surveillance, les corrections de bugs et l'évolution continue de votre solution.</p>
                 <ul class="service-features">
@@ -453,7 +491,7 @@
               </div>
 
               <div class="service-card" style="padding:36px;">
-                <div class="service-icon" style="width:60px;height:60px;font-size:26px;">🤖</div>
+                <div class="service-icon" style="width:60px;height:60px;font-size:26px;"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/bot.svg" alt="" loading="lazy" decoding="async"></div>
                 <h3 style="font-size:22px;font-family:'Syne',sans-serif;">Intégration IA</h3>
                 <p style="font-size:15px;">Chatbots intelligents, génération de contenu, traitement automatique - on intègre les outils d'IA qui ont vraiment du sens pour votre activité.</p>
                 <ul class="service-features">
@@ -514,13 +552,13 @@
             <div class="grid-3">
               <div class="portfolio-card">
                 <div class="portfolio-thumbnail" style="background:linear-gradient(135deg,#e6f7f3,#c8f0e5);">
-                  🍔
+                  <img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/sandwich.svg" alt="" loading="lazy" decoding="async">
                   <span class="portfolio-tag tag-emerald">Application mobile</span>
                 </div>
                 <div class="portfolio-body">
                   <h3>FoodExpress - App de livraison</h3>
                   <p>Une application de commande et livraison de repas gérant le tracking en temps réel, les paiements mobile money et les notifications push pour clients et livreurs.</p>
-                  <div class="portfolio-result">📈 +220% de commandes en 3 mois après lancement</div>
+                  <div class="portfolio-result"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/trending-up.svg" alt="" loading="lazy" decoding="async"> +220% de commandes en 3 mois après lancement</div>
                   <div class="portfolio-footer">
                     <div class="tech-stack">
                       <span class="tag tag-mono" style="font-size:11px;">Flutter</span>
@@ -534,13 +572,13 @@
 
               <div class="portfolio-card">
                 <div class="portfolio-thumbnail" style="background:linear-gradient(135deg,#e8eef5,#d0dff0);">
-                  📦
+                  <img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/package.svg" alt="" loading="lazy" decoding="async">
                   <span class="portfolio-tag tag-navy">Application métier</span>
                 </div>
                 <div class="portfolio-body">
                   <h3>LogiTrack - Gestion de flotte</h3>
                   <p>Dashboard temps réel de suivi de 80+ véhicules, gestion des missions, rapports automatiques et alertes de maintenance. Remplace 3 tableurs Excel et 2 ERP différents.</p>
-                  <div class="portfolio-result">⏱️ 6h de saisie manuelle économisées par jour</div>
+                  <div class="portfolio-result"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/clock.svg" alt="" loading="lazy" decoding="async"> 6h de saisie manuelle économisées par jour</div>
                   <div class="portfolio-footer">
                     <div class="tech-stack">
                       <span class="tag tag-mono" style="font-size:11px;">React</span>
@@ -554,13 +592,13 @@
 
               <div class="portfolio-card">
                 <div class="portfolio-thumbnail" style="background:linear-gradient(135deg,#f0edfe,#e2d9fc);">
-                  🎓
+                  <img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/graduation-cap.svg" alt="" loading="lazy" decoding="async">
                   <span class="portfolio-tag" style="background:#f0edfe;color:#6c5ce7;">Plateforme web</span>
                 </div>
                 <div class="portfolio-body">
                   <h3>EduPlanet - E-learning</h3>
                   <p>Plateforme de cours en ligne pour 2 000+ élèves. Vidéos streamées, quiz interactifs, certificats automatiques, espace enseignant et suivi des progrès parent/élève.</p>
-                  <div class="portfolio-result">🎯 2 100 élèves actifs, 94% de taux de complétion</div>
+                  <div class="portfolio-result"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/target.svg" alt="" loading="lazy" decoding="async"> 2 100 élèves actifs, 94% de taux de complétion</div>
                   <div class="portfolio-footer">
                     <div class="tech-stack">
                       <span class="tag tag-mono" style="font-size:11px;">Next.js</span>
@@ -574,13 +612,13 @@
 
               <div class="portfolio-card">
                 <div class="portfolio-thumbnail" style="background:linear-gradient(135deg,#fef4ec,#fde8d0);">
-                  🏥
+                  <img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/hospital.svg" alt="" loading="lazy" decoding="async">
                   <span class="portfolio-tag tag-orange">Application mobile</span>
                 </div>
                 <div class="portfolio-body">
                   <h3>MedikApp - Téléconsultation</h3>
                   <p>Application de prise de rendez-vous et téléconsultation médicale. Agenda médecin, vidéo call intégré, ordonnances numériques et rappels automatiques patients.</p>
-                  <div class="portfolio-result">👩‍⚕️ 400 consultations/mois dès le 1er mois</div>
+                  <div class="portfolio-result"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/stethoscope.svg" alt="" loading="lazy" decoding="async"> 400 consultations/mois dès le 1er mois</div>
                   <div class="portfolio-footer">
                     <div class="tech-stack">
                       <span class="tag tag-mono" style="font-size:11px;">React Native</span>
@@ -594,13 +632,13 @@
 
               <div class="portfolio-card">
                 <div class="portfolio-thumbnail" style="background:linear-gradient(135deg,#fdedf1,#fbd0d9);">
-                  🏗️
+                  <img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/hard-hat.svg" alt="" loading="lazy" decoding="async">
                   <span class="portfolio-tag" style="background:var(--red-faint);color:var(--red);">Site web</span>
                 </div>
                 <div class="portfolio-body">
                   <h3>Solaris BTP - Site vitrine</h3>
                   <p>Refonte complète du site d'une entreprise de construction. Nouveau design, portfolio projets interactif, formulaire de devis et intégration CRM. +340% de leads entrants.</p>
-                  <div class="portfolio-result">📊 +340% de demandes de devis en 2 mois</div>
+                  <div class="portfolio-result"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/chart-bar.svg" alt="" loading="lazy" decoding="async"> +340% de demandes de devis en 2 mois</div>
                   <div class="portfolio-footer">
                     <div class="tech-stack">
                       <span class="tag tag-mono" style="font-size:11px;">Next.js</span>
@@ -614,13 +652,13 @@
 
               <div class="portfolio-card">
                 <div class="portfolio-thumbnail" style="background:linear-gradient(135deg,#e6f7f3,#d0f0e5);">
-                  💰
+                  <img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/euro.svg" alt="" loading="lazy" decoding="async">
                   <span class="portfolio-tag tag-emerald">Application métier</span>
                 </div>
                 <div class="portfolio-body">
                   <h3>TechMada - CRM interne</h3>
                   <p>CRM sur-mesure pour une PME tech : suivi des prospects, pipeline de vente visuel, relances automatiques, rapports hebdomadaires et intégration Gmail.</p>
-                  <div class="portfolio-result">🚀 Taux de clôture deals +45% en 6 mois</div>
+                  <div class="portfolio-result"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/rocket.svg" alt="" loading="lazy" decoding="async"> Taux de clôture deals +45% en 6 mois</div>
                   <div class="portfolio-footer">
                     <div class="tech-stack">
                       <span class="tag tag-mono" style="font-size:11px;">React</span>
@@ -796,19 +834,19 @@
                 <p style="color:var(--text2);font-size:16px;margin-top:12px;line-height:1.7;">Une idée floue ou un brief précis - peu importe le stade. On vous répond en moins de 24h avec une première analyse sans engagement.</p>
                 <div class="contact-info" style="margin-top:32px;">
                   <div class="contact-item">
-                    <div class="contact-icon">📧</div>
+                    <div class="contact-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/mail.svg" alt="" loading="lazy" decoding="async"></div>
                     <div><h4>Email</h4><p>hello@opendev.mg</p></div>
                   </div>
                   <div class="contact-item">
-                    <div class="contact-icon">📞</div>
+                    <div class="contact-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/phone.svg" alt="" loading="lazy" decoding="async"></div>
                     <div><h4>Téléphone / WhatsApp</h4><p>+261 34 00 000 00</p></div>
                   </div>
                   <div class="contact-item">
-                    <div class="contact-icon">📍</div>
+                    <div class="contact-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/map-pin.svg" alt="" loading="lazy" decoding="async"></div>
                     <div><h4>Localisation</h4><p>Antananarivo, Madagascar<br>(On travaille à distance dans le monde entier)</p></div>
                   </div>
                   <div class="contact-item">
-                    <div class="contact-icon">🗓️</div>
+                    <div class="contact-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/calendar-days.svg" alt="" loading="lazy" decoding="async"></div>
                     <div><h4>Disponibilité</h4><p>Lun – Ven, 8h – 18h (EAT)<br>Réponse sous 24h garantie</p></div>
                   </div>
                 </div>
@@ -901,10 +939,10 @@
                 <h2>Créer du numérique qui sert vraiment</h2>
                 <p style="margin-top:16px;font-size:16px;color:var(--text2);line-height:1.8;">OpenDev accompagne entreprises et particuliers dans la construction de solutions numériques pensées pour résoudre de vrais problèmes - pas des vitrines creuses ou des apps oubliées après 3 mois.</p>
                 <div style="margin-top:24px;display:flex;flex-direction:column;gap:12px;">
-                  <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--emerald);font-size:18px;flex-shrink:0;">✓</span><span style="color:var(--text2);">Comprendre le problème avant de proposer une solution</span></div>
-                  <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--emerald);font-size:18px;flex-shrink:0;">✓</span><span style="color:var(--text2);">Livrer des produits que les utilisateurs finaux adoptent vraiment</span></div>
-                  <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--emerald);font-size:18px;flex-shrink:0;">✓</span><span style="color:var(--text2);">Rendre nos clients autonomes sur leurs outils</span></div>
-                  <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--emerald);font-size:18px;flex-shrink:0;">✓</span><span style="color:var(--text2);">Prouver que la qualité tech malgache est de niveau international</span></div>
+                  <div style="display:flex;gap:10px;align-items:flex-start;"><span class="inline-check"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/check.svg" alt="" loading="lazy" decoding="async"></span><span style="color:var(--text2);">Comprendre le problème avant de proposer une solution</span></div>
+                  <div style="display:flex;gap:10px;align-items:flex-start;"><span class="inline-check"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/check.svg" alt="" loading="lazy" decoding="async"></span><span style="color:var(--text2);">Livrer des produits que les utilisateurs finaux adoptent vraiment</span></div>
+                  <div style="display:flex;gap:10px;align-items:flex-start;"><span class="inline-check"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/check.svg" alt="" loading="lazy" decoding="async"></span><span style="color:var(--text2);">Rendre nos clients autonomes sur leurs outils</span></div>
+                  <div style="display:flex;gap:10px;align-items:flex-start;"><span class="inline-check"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/check.svg" alt="" loading="lazy" decoding="async"></span><span style="color:var(--text2);">Prouver que la qualité tech malgache est de niveau international</span></div>
                 </div>
               </div>
               <div>
@@ -949,7 +987,7 @@
                 <div class="team-avatar" style="background:linear-gradient(135deg,#00A878,#6c5ce7);">TM</div>
                 <div class="team-name">Tojo Maniry</div>
                 <div class="team-role">Mobile Lead</div>
-                <p class="team-bio">Flutter & React Native expert. A publié 12 apps sur les stores avec 4,7★ de moyenne.</p>
+                <p class="team-bio">Flutter & React Native expert. A publié 12 apps sur les stores avec 4,7/5 de moyenne.</p>
               </div>
             </div>
           </div>
@@ -963,12 +1001,12 @@
               <h2 style="margin-top:8px;">Ce qui nous guide</h2>
             </div>
             <div class="values-grid">
-              <div class="value-card"><div class="value-icon">🎯</div><h3>Problème first</h3><p>On ne commence pas à coder avant d'avoir compris pourquoi. La meilleure solution est parfois de ne pas coder du tout.</p></div>
-              <div class="value-card"><div class="value-icon">🔍</div><h3>Transparence totale</h3><p>Budget, délais, obstacles - on communique tout, même ce qui est inconfortable. Pas de mauvaises surprises.</p></div>
-              <div class="value-card"><div class="value-icon">⚡</div><h3>Livraison continue</h3><p>Des démos toutes les 2 semaines. On préfère un feedback tôt à une longue phase de recettage douloureuse.</p></div>
-              <div class="value-card"><div class="value-icon">🌍</div><h3>Impact local</h3><p>On investit dans l'écosystème tech malgache : mentorat, open source, et tarifs adaptés aux acteurs locaux.</p></div>
-              <div class="value-card"><div class="value-icon">📖</div><h3>Autonomie client</h3><p>On part en laissant des clés, pas des cadenas. Documentation, formation, code source - vous êtes libres.</p></div>
-              <div class="value-card"><div class="value-icon">⭐</div><h3>Exigence technique</h3><p>Tests, revues de code, performance - on ne fait pas de compromis sur la qualité. La dette technique coûte cher.</p></div>
+              <div class="value-card"><div class="value-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/target.svg" alt="" loading="lazy" decoding="async"></div><h3>Problème first</h3><p>On ne commence pas à coder avant d'avoir compris pourquoi. La meilleure solution est parfois de ne pas coder du tout.</p></div>
+              <div class="value-card"><div class="value-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/search.svg" alt="" loading="lazy" decoding="async"></div><h3>Transparence totale</h3><p>Budget, délais, obstacles - on communique tout, même ce qui est inconfortable. Pas de mauvaises surprises.</p></div>
+              <div class="value-card"><div class="value-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/zap.svg" alt="" loading="lazy" decoding="async"></div><h3>Livraison continue</h3><p>Des démos toutes les 2 semaines. On préfère un feedback tôt à une longue phase de recettage douloureuse.</p></div>
+              <div class="value-card"><div class="value-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/earth.svg" alt="" loading="lazy" decoding="async"></div><h3>Impact local</h3><p>On investit dans l'écosystème tech malgache : mentorat, open source, et tarifs adaptés aux acteurs locaux.</p></div>
+              <div class="value-card"><div class="value-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/book-open.svg" alt="" loading="lazy" decoding="async"></div><h3>Autonomie client</h3><p>On part en laissant des clés, pas des cadenas. Documentation, formation, code source - vous êtes libres.</p></div>
+              <div class="value-card"><div class="value-icon"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"></div><h3>Exigence technique</h3><p>Tests, revues de code, performance - on ne fait pas de compromis sur la qualité. La dette technique coûte cher.</p></div>
             </div>
           </div>
         </section>
@@ -1014,7 +1052,7 @@
             <!-- Article vedette -->
             <div style="background:var(--navy);border-radius:var(--radius-xl);padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:48px;">
               <div>
-                <span class="tag tag-emerald" style="margin-bottom:16px;display:inline-flex;">⭐ Article vedette</span>
+                <span class="tag tag-emerald" style="margin-bottom:16px;display:inline-flex;"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" alt="" loading="lazy" decoding="async"> Article vedette</span>
                 <h2 style="color:white;font-size:30px;margin-bottom:16px;">Pourquoi 70% des apps mobiles sont abandonnées en 3 mois - et comment l'éviter</h2>
                 <p style="color:rgba(255,255,255,0.65);font-size:15px;line-height:1.7;margin-bottom:24px;">On analyse les raisons principales : mauvaise définition du problème, UX négligée, absence de tests utilisateurs… et on vous donne les 5 questions à poser avant de commencer.</p>
                 <div style="display:flex;align-items:center;gap:16px;">
@@ -1022,13 +1060,13 @@
                   <span style="font-size:13px;color:rgba(255,255,255,0.45);">8 min de lecture · 1 200 vues</span>
                 </div>
               </div>
-              <div style="text-align:center;font-size:80px;">📱</div>
+              <div style="text-align:center;font-size:80px;"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/smartphone.svg" alt="" loading="lazy" decoding="async"></div>
             </div>
 
             <!-- Grille articles -->
             <div class="grid-3">
               <div class="blog-card">
-                <div class="blog-thumbnail" style="background:var(--emerald-faint);">🌐</div>
+                <div class="blog-thumbnail" style="background:var(--emerald-faint);"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/globe-2.svg" alt="" loading="lazy" decoding="async"></div>
                 <div class="blog-body">
                   <span class="tag tag-emerald" style="margin-bottom:10px;display:inline-flex;">Sites web</span>
                   <h3>Next.js vs WordPress en 2026 : lequel choisir pour votre site ?</h3>
@@ -1037,7 +1075,7 @@
                 </div>
               </div>
               <div class="blog-card">
-                <div class="blog-thumbnail" style="background:#f0edfe;">⚙️</div>
+                <div class="blog-thumbnail" style="background:#f0edfe;"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/settings.svg" alt="" loading="lazy" decoding="async"></div>
                 <div class="blog-body">
                   <span class="tag tag-navy" style="margin-bottom:10px;display:inline-flex;">Méthodologie</span>
                   <h3>Comment écrire un bon cahier des charges quand on n'est pas tech</h3>
@@ -1046,7 +1084,7 @@
                 </div>
               </div>
               <div class="blog-card">
-                <div class="blog-thumbnail" style="background:var(--orange-faint);">💰</div>
+                <div class="blog-thumbnail" style="background:var(--orange-faint);"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/euro.svg" alt="" loading="lazy" decoding="async"></div>
                 <div class="blog-body">
                   <span class="tag tag-orange" style="margin-bottom:10px;display:inline-flex;">Budget</span>
                   <h3>Combien coûte vraiment une application mobile en 2026 ?</h3>
@@ -1055,7 +1093,7 @@
                 </div>
               </div>
               <div class="blog-card">
-                <div class="blog-thumbnail" style="background:var(--red-faint);">🤖</div>
+                <div class="blog-thumbnail" style="background:var(--red-faint);"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/bot.svg" alt="" loading="lazy" decoding="async"></div>
                 <div class="blog-body">
                   <span class="tag" style="margin-bottom:10px;display:inline-flex;background:var(--red-faint);color:var(--red);border-color:rgba(232,54,93,0.2);">IA</span>
                   <h3>5 façons concrètes d'intégrer l'IA dans votre PME sans budget colossal</h3>
@@ -1064,7 +1102,7 @@
                 </div>
               </div>
               <div class="blog-card">
-                <div class="blog-thumbnail" style="background:var(--bg2);">🔒</div>
+                <div class="blog-thumbnail" style="background:var(--bg2);"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/lock.svg" alt="" loading="lazy" decoding="async"></div>
                 <div class="blog-body">
                   <span class="tag tag-navy" style="margin-bottom:10px;display:inline-flex;">Sécurité</span>
                   <h3>Les 10 erreurs de sécurité les plus communes dans les apps web malgaches</h3>
@@ -1073,7 +1111,7 @@
                 </div>
               </div>
               <div class="blog-card">
-                <div class="blog-thumbnail" style="background:var(--emerald-faint);">📊</div>
+                <div class="blog-thumbnail" style="background:var(--emerald-faint);"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/chart-bar.svg" alt="" loading="lazy" decoding="async"></div>
                 <div class="blog-body">
                   <span class="tag tag-emerald" style="margin-bottom:10px;display:inline-flex;">Cas client</span>
                   <h3>Comment on a multiplié par 3 les commandes de FoodExpress en 3 mois</h3>
@@ -1093,7 +1131,7 @@
             <p style="color:var(--text2);font-size:16px;margin:12px 0 32px;">1 article par semaine. Pas de spam. Des conseils concrets pour réussir votre projet numérique.</p>
             <div style="display:flex;max-width:480px;margin:0 auto;gap:12px;">
               <input type="email" class="form-input" placeholder="votre@email.com" style="flex:1;">
-              <button class="btn btn-primary" onclick="showToast('✅ Inscription confirmée !')">S'abonner</button>
+              <button class="btn btn-primary" onclick="showToast('Inscription confirmée !')">S'abonner</button>
             </div>
             <p style="font-size:12px;color:var(--text3);margin-top:12px;">Rejoignez 340 abonnés · Désinscription en 1 clic</p>
           </div>
@@ -1110,18 +1148,22 @@
       </div>
 
       <!-- TOAST NOTIFICATION -->
-    <div id="toast">✅ Message envoyé ! On vous répond sous 24h.</div>
+    <div id="toast"><img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/check-circle.svg" alt="" loading="lazy" decoding="async"> Message envoyé ! On vous répond sous 24h.</div>
     
     <script type="module" src="/src/main.js"></script>
     <script>
       function showPage(id) {
         document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
         const target = document.getElementById('page-' + id);
-        if (target) { target.classList.add('active'); window.scrollTo(0, 0); }
+        if (target) { target.classList.add('active'); window.scrollTo(0, 0); document.body.classList.remove('menu-open'); }
         document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active-link'));
         const map = { home: 0, services: 1, portfolio: 2, about: 3, blog: 4, contact: 5 };
         const navLinks = document.querySelectorAll('.nav-link');
         if (map[id] !== undefined && navLinks[map[id]]) navLinks[map[id]].classList.add('active-link');
+      }
+
+      function toggleMenu() {
+        document.body.classList.toggle('menu-open');
       }
 
       function toggleFaq(item) {
@@ -1132,13 +1174,13 @@
 
       function showToast(msg) {
         const t = document.getElementById('toast');
-        t.textContent = msg || '✅ Message envoyé ! On vous répond sous 24h.';
+        t.innerHTML = `<img class="icon" src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/check-circle.svg" alt="" loading="lazy" decoding="async"> ${msg || 'Message envoyé ! On vous répond sous 24h.'}`;
         t.classList.add('show');
         setTimeout(() => t.classList.remove('show'), 3500);
       }
 
       function submitForm() {
-        showToast('✅ Demande envoyée ! Réponse sous 24h.');
+        showToast('Demande envoyée ! Réponse sous 24h.');
       }
 
       showPage('home');
