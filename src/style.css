@@ -766,13 +766,22 @@
     background: var(--navy);
     transition: transform 0.2s, opacity 0.2s;
   }
+  @media (min-width: 1024px){
+    .cont-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+    .cont-grid-article{
+      display:grid;grid-template-columns:1fr 1fr;
+    }
+  }
   @media (max-width: 1024px) {
     .navbar { padding: 0 20px; }
     .navbar-actions { display: none; }
     .hero { height: auto; min-height: 100vh; padding: 92px 0 42px; }
     .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; text-align: center; }
     .hero-cta, .hero-stats { justify-content: center; }
-    .hero-visual { height: min(54vh, 470px); margin: -28px auto 0; width: 620px; }
+    .hero-visual {
+      width: 100vw;
+      height: 690px;
+    }
     .grid-3, .pricing-grid, .values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .grid-4, .process-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
     .process-grid::before { display: none; }
@@ -780,7 +789,9 @@
   }
   @media (max-width: 760px) {
     body { font-size: 14px; }
-    .container, .container-sm { padding: 0 18px; }
+    .container, .container-sm { 
+      padding: 0 18px;
+    }
     .navbar { height: 60px; }
     .page-content { padding-top: 60px; }
     .hamburger { display: inline-flex; }
@@ -817,11 +828,8 @@
     .hero-stat-value { font-size: 25px; }
     .hero-stat-label { font-size: 11px; }
     .hero-visual {
-      width: 118vw;
-      height: 430px;
-      margin-left: -18vw;
-      margin-top: -36px;
-      transform: rotate(-4deg) translateY(8px);
+      width: 100vw;
+      height: 390px;
     }
     .wolf-nameplate { top: 16%; left: 56%; font-size: 11px; }
     .wolf-chip-seo { right: 12%; top: 38%; }
@@ -833,13 +841,7 @@
     .pricing-card.featured:hover { transform: translateY(-4px); }
     .newsletter-form, [style*="max-width:480px"] { flex-direction: column; }
   }
-  @media (max-width: 430px) {
-    .hero-visual {
-      width: 136vw;
-      height: 390px;
-      margin-left: -30vw;
-      transform: rotate(-7deg) translateY(-2px);
-    }
+  @media (max-width: 530px) {
     .wolf-nameplate { left: 60%; top: 12%; }
     .wolf-chip { padding: 7px 10px; }
   }
